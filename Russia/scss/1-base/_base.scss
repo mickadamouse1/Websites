@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ccc;
+    margin: 15px 10%;
+    line-height: 1.4;
+}
+
+.wrapper {
+    display: grid;
+}

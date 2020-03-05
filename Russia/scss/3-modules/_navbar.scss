@@ -1,0 +1,49 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    background: $light;
+    align-items: center;
+    box-shadow: $shadow;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-family: sans-serif;
+    @include setGridLoc(1, 2, 1, 2);
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .nav a {
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    color: var(--dark);
+    font-size: 25px;
+  }
+
+  .nav a:hover {
+    background: none;
+    color: #333;
+  }
+
+  .nav-home {
+    @include setGridLoc(4, 5, 1, 2);
+  }
+  
+  .nav-about {
+    @include setGridLoc(5, 6, 1, 2);
+  }
+
+  .nav-contact {
+    @include setGridLoc(6, 7, 1, 2);
+  }
+
+  .nav-gallery {
+    @include setGridLoc(7, 8, 1, 2);
+  }

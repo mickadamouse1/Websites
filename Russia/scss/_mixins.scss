@@ -1,0 +1,12 @@
+@mixin backgroundImg($url, $position, $size) {
+    background: $url;
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin setGridLoc($col1, $col2, $row1, $row2) {
+    grid-column-start: $col1;
+    grid-column-end: $col2;
+    grid-row-start: $row1;
+    grid-row-end: $row2;
+}

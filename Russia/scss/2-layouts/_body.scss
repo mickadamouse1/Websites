@@ -1,0 +1,133 @@
+.quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: $shadow;
+    padding: 25px;
+    background: $primary;
+    grid-gap: 20px;
+  }
+  
+  .quote {
+    display: block;
+    @include setGridLoc(1, 2, 1, 2);
+    padding: 15px;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: $shadow;
+    font-family: sans-serif;
+    background: $light;
+    font-size: 25px;
+    margin: 0;
+    border-style: groove;
+    border-width: 1px;
+  }
+
+  .quote-text {
+    display: block;
+    @include setGridLoc(2, 3, 1, 2);
+    padding: 15px;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .pic-slot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background: $light;
+    box-shadow: $shadow;
+    grid-gap: 20px;
+    height: 200px;
+    padding: 20px;
+    border-top-style: groove;
+    border-top-width: 1px;
+    border-bottom-style: groove;
+    border-bottom-width: 1px;
+  }
+
+  .pic {
+    box-shadow: $shadow;
+    border-style: groove;
+    border-width: 1px;
+  }
+
+  #pic1 {
+    @include setGridLoc(1, 2, 1, 2);
+    @include backgroundImg(url(../images/pic2.jpg), center, cover);
+  }
+
+  #pic2 {
+    @include setGridLoc(2, 3, 1, 2);
+    @include backgroundImg(url(../images/pic3.jpg), center, cover);
+  }
+
+  #pic3 {
+    @include setGridLoc(3, 4, 1, 2);
+    @include backgroundImg(url(../images/pic4.jpg), center, cover);
+  }
+
+  .main-text-slot-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background: $primary;
+    box-shadow: $shadow;
+  }
+
+  .main-text-slot-grid p {
+    font-size: 20px;
+    font-family: sans-serif;
+    display: block;
+    @include setGridLoc(1, 2, 1, 2);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .pic-with-text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 550px;
+    grid-gap: 20px;
+    padding: 20px;
+    background: $light;
+    box-shadow: $shadow;
+    border-top-style: groove;
+    border-top-width: 1px;
+    border-bottom-style: groove;
+    border-bottom-width: 1px;
+  }
+
+  .pic-with-text-pic1 {
+    display: block;
+    @include setGridLoc(1, 2, 1, 2);
+    @include backgroundImg(url(../images/pic4.jpg), center, cover);
+    border-style: groove;
+    border-width: 1px;
+    box-shadow: $shadow;
+  }
+
+  .pic-with-text-text1 {
+    display: block;
+    @include setGridLoc(2, 3, 1, 2);
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+
+  .pic-with-text-pic2 {
+    display: block;
+    @include setGridLoc(2, 3, 2, 3);
+    @include backgroundImg(url(../images/pic3.jpg), center, cover);
+    border-style: groove;
+    border-width: 1px;
+    box-shadow: $shadow;
+  }
+
+  .pic-with-text-text2 {
+      display: block;
+      @include setGridLoc(1, 2, 2, 3);
+      font-family: sans-serif;
+      font-size: 20px;
+    }

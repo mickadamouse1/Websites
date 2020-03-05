@@ -1,0 +1,16 @@
+footer {
+    background-color: #333;
+    box-shadow: $shadow;
+    padding: 20px;
+  }
+
+  footer a {
+    font-family: sans-serif;
+    color: $light;
+  }
+
+  footer p {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: $primary;
+  }
