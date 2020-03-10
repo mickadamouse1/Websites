@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 26px;
+    letter-spacing: .095rem;
+}
+
+body {
+    background: #333;
+    color: #f4f4f4;
+}
+
+.container {
+    width: 86%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    background: #333;
+    border: none;
+    color: #f4f4f4;
+    font-weight: 600;
+}
+
+.clr {
+    clear: both;
+}
+
+/* Boxes */
+
+.box {
+    padding: 1rem;
+}
+
+.box-1 {
+    background: #ccc;
+    color: #333;
+    border-right: solid 5px black;
+}
+
+.box-2 {
+    background: #555;
+    color: #f4f4f4;
+    border-right: dashed 5px black;
+}
+
+.box-3 {
+    background: #ccc;
+    color: #333;
+    border-right: solid 5px black;
+}
+
+.box button {
+    padding: .5rem 1.5rem;
+}
+
+/* Categories */
+
+.categories {
+    background: #555;
+    padding: 1rem;
+    border-right: dashed 5px black;
+}
+
+.categories ul {
+    padding: 0;
+    list-style: none;
+}
+
+.categories li {
+    padding: .5rem 0;
+    border-bottom: 5px solid #333;
+    width: 7.5rem;
+}
+
+.categories a:hover {
+    color: red;
+}
+
+/* Form */
+
+.my-form {
+    background: #ccc;
+    color: #333;
+    padding: 1rem;
+    border-right: solid 5px black;
+}
+
+.form-group {
+
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"], 
+.my-form input[type="email"],
+.my-form textarea {
+    padding: .5rem;
+    width: 100%;
+}
+
+/* Block Group 1 */
+
+.block {
+    width: 33.3%;
+    text-align: center;
+}
+
+.block-group {
+    border-right: 5px dashed black;
+    display: flex;
+    background: #555;
+}
+
+/* Block Group 2 */
+
+#block-group-2 {
+    float: left;
+    background: #ccc;
+    color: #333;
+    border-right: solid 5px black;
+    padding: 1rem;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding-right: 1rem;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    border-left: 2.5px solid #333;
+    padding-left: 1rem;
+}
+
+/* Positioning Box */
+
+.p-box {
+    padding: 1rem;
+    background: url("https://images.unsplash.com/photo-1520312501384-dbdb83a1cb11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80") center/cover no-repeat;
+    border-right: 5px dashed black;
+    height: 30rem;
+    position: relative;
+    color: #333;
+}
+
+.p-box h1 {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+.p-box h2 {
+    position: absolute;
+    top: 5rem;
+    left: 4rem;
+}
+
+/* Go to top button */
+
+.fix-me {
+    position: fixed;
+    background: #ccc;
+    width: 5%;
+    height: 3rem;
+    bottom: 1rem;
+    right: .5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0 0;
+}
+
+.fix-me:hover {
+    background: #aaa;
+}
+
+/* Psudo class list */
+
+.my-list {
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.my-list ul {
+    list-style: none;
+}
+
+.my-list li {
+    padding: .5rem 1rem;
+}
+
+.my-list li:first-child {
+    background: #aaa;
+}
+
+.my-list li:nth-child(2) {
+    background: #bbb;
+}
+
+.my-list li:nth-child(3) {
+    background: #ccc;
+}
+
+.my-list li:nth-child(4) {
+    background: #ddd;
+}
+
+.my-list li:nth-child(5) {
+    background: #eee;
+}
+
+.my-list li:nth-child(6) {
+    background: #fff;
+}
+
+.my-list li:nth-child(7) {
+    background: #eee;
+}
+
+.my-list li:nth-child(8) {
+    background: #ddd;
+}
+
+.my-list li:nth-child(9) {
+    background: #ccc;
+}
+
+.my-list li:nth-child(10) {
+    background: #bbb;
+}
+
+.my-list li:last-child {
+    background: #aaa;
+}
