@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background: #333;
+}
+
+/*/////////////////////////////////*/
+
+/* Navigation */
+
+nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav ul {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    font-size: 1.25rem;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,1);
+    display: inline-block;
+    margin: 1.75rem 1rem 0;
+    text-transform: uppercase;
+}
+
+nav ul li img {
+    width: 8rem;
+}
+
+nav ul li:nth-child(3) {
+    margin: 0 1rem;
+}
+
+/*/////////////////////////////////*/
+
+/* Jumbotron */
+
+#jumbotron {
+    background: url(images/jumbotron.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    z-index: -1;
+}
+
+#jumbotron div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(62,32,16,0.6);
+}
+
+/*/////////////////////////////////*/
+
+/* Showcase */
+
+#sectionShowcase {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20rem;
+}
+
+.showcase {
+    text-align: center;
+}
+
+.showcase div {
+    border-radius: 100%;
+    width:12rem;
+    height:12rem;
+    box-shadow: 0 1px 5px rgba(0,0,0,.8)
+}
+
+.showcase p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.showcase:nth-child(1) div {
+    background: url(images/showcase1.jpg) center/cover no-repeat;
+}
+
+.showcase:nth-child(2) div {
+    background: url(images/showcase2.jpg) center/cover no-repeat;
+}
+
+.showcase:nth-child(3) div {
+    background: url(images/showcase3.jpg) center/cover no-repeat;
+}
+
+/*/////////////////////////////////*/
+
+/* Footer */
+
+footer {
+    background: #333;
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
