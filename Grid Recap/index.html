@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="utf-8">
+        <title>CSS Grid Recap</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Grid Template</h1>
+            <p>Uses "Grid-Template: rows / columns" to create a grid layout.</p>
+            <div class="grid grid-1">
+                <div class="grid-item blue">1</div>
+                <div class="grid-item red">2</div>
+                <div class="grid-item blue">3</div>
+                <div class="grid-item yellow">4</div>
+                <div class="grid-item blue">5</div>
+                <div class="grid-item red">6</div>
+            </div>
+
+            <h1>Grid Positioning</h1>
+            <p>Uses "grid-row: start / end" to position specific items within the grid.</p>
+            <div class="grid grid-2">
+                <div class="grid-item header blue">HEADER</div>
+                <div class="grid-item menu red">MENU</div>
+                <div class="grid-item content blue">CONTENT</div>
+                <div class="grid-item footer yellow">FOOTER</div>
+            </div>
+
+            <h1>Grid Areas</h1>
+            <p>Uses "Grid-Template-Areas: 'string string string'" to position every item.</p>
+            <div class="grid grid-3">
+                <div class="grid-item header blue">HEADER</div>
+                <div class="grid-item menu red">MENU</div>
+                <div class="grid-item content blue">CONTENT</div>
+                <div class="grid-item footer yellow">FOOTER</div>
+            </div>
+        </div>
+    </body>
+</html>

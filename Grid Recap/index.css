@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #ffeead;
+}
+
+body {
+    background: #ffeead;
+    height: 100rem;
+}
+
+.container {
+    margin: 2rem;
+}
+
+h1, p {
+    color: #ff6f69;
+    text-align: center;
+}
+
+h1 {
+    margin: 5rem 0 2rem;
+    font-size: 2.5rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .5)
+}
+
+p {
+    width: 24rem;
+    margin: 1.5rem auto;
+    font-weight: 600;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID GLOBALS */
+
+.grid {
+    display: grid;
+    grid-gap: .5rem;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.red {
+    background-color: #ff6f69;
+}
+
+.blue {
+    background-color: #96ceb4;
+}
+
+.yellow {
+    background-color: #ffcc5c;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 1 */
+
+.grid-1 {
+    grid-template: repeat(2, 50px) / repeat(3, 1fr);
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 2 */
+
+.grid-2 {
+    grid-template: 40px 200px 40px / repeat(12, 1fr);
+}
+
+.header {
+    grid-column: 2 / -1;
+}
+
+.menu {
+    grid-row: 1 / -1;
+}
+
+.content {
+    grid-column: 2 / -1;
+}
+
+.footer {
+    grid-column: 2 / -1;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 3 */
+
+.grid-3 {
+    height: 25rem;
+    grid-template: 40px auto 40px / repeat(12, 1fr);
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+.grid-3 .header {
+    grid-area: h;
+}
+
+.grid-3 .menu {
+   grid-area: m;
+}
+
+.grid-3 .content {
+    grid-area: c;
+}
+
+.grid-3 .footer {
+    grid-area: f;
+}

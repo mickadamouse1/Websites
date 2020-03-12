@@ -31,19 +31,59 @@ nav ul {
 }
 
 nav ul li{
-    font-size: 1.25rem;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,1);
+    font-size: 1.5rem;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5), 0 0 10px rgba(0,0,0,1);
     display: inline-block;
     margin: 1.75rem 1rem 0;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 nav ul li img {
     width: 8rem;
 }
 
-nav ul li:nth-child(3) {
+nav ul li:nth-child(5) {
     margin: 0 1rem;
+}
+
+nav ul .mobile {
+    display: none;
+}
+
+/* RESPONSIVE RULES*/
+
+@media screen and (max-width: 675px) {
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 5rem 1rem 3rem;
+    }
+
+    nav ul .mobile {
+        display: block;
+    }
+
+    nav ul .desktop {
+        display: none;
+    }
+
+    nav ul li img {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    nav ul li {
+        font-size: 1.25rem;
+    }
+
+    nav ul li img {
+        width: 10rem;
+    }
 }
 
 /*/////////////////////////////////*/
@@ -62,7 +102,7 @@ nav ul li:nth-child(3) {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(62,32,16,0.6);
+    background: rgba(208, 135, 97, 0.32);
 }
 
 /*/////////////////////////////////*/
@@ -70,39 +110,66 @@ nav ul li:nth-child(3) {
 /* Showcase */
 
 #sectionShowcase {
-    background: #f4f4f4;
+    background: #ff9158;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 20rem;
+    height: auto;
+    padding: 2rem;
 }
 
-.showcase {
+.feature {
     text-align: center;
 }
 
-.showcase div {
+.feature div {
     border-radius: 100%;
     width:12rem;
     height:12rem;
-    box-shadow: 0 1px 5px rgba(0,0,0,.8)
+    box-shadow: 0 1px 5px rgba(0,0,0,.8);
+    margin: 0 .5rem;
 }
 
-.showcase p {
+.feature p {
     margin-top: 1rem;
     font-size: 1.2rem;
 }
 
-.showcase:nth-child(1) div {
+.feature:nth-child(1) div {
     background: url(images/showcase1.jpg) center/cover no-repeat;
 }
 
-.showcase:nth-child(2) div {
+.feature:nth-child(2) div {
     background: url(images/showcase2.jpg) center/cover no-repeat;
 }
 
-.showcase:nth-child(3) div {
+.feature:nth-child(3) div {
     background: url(images/showcase3.jpg) center/cover no-repeat;
+}
+
+/* RESPONSIVE RULES*/
+
+@media screen and (max-width: 650px) {
+    #sectionShowcase {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 529px) {
+        .feature:nth-child(3) {
+            margin-top: 2rem;
+        }
+
+        .feature {
+            margin: 0 .5rem 0;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 528px) {
+    .feature:nth-child(2) {
+        margin: 2rem;
+    }
 }
 
 /*/////////////////////////////////*/
@@ -116,4 +183,33 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+
+@media screen and (max-width: 650px) {
+    footer {
+        align-items: center;
+    }
+}
+
+/*/////////////////////////////////*/
+
+/*/////////////////////////////////*/
+
+/*/////////////////////////////////*/
+
+/*/////////////////////////////////*/
+
+/*/////////////////////////////////*/
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background: red;
+    }
 }
