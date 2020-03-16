@@ -8,22 +8,30 @@
 
 body {
     background: #ffeead;
-    height: 100rem;
+    height: 500rem;
 }
 
 .container {
     margin: 2rem;
 }
 
-h1, p {
+h1, h2, p {
     color: #ff6f69;
     text-align: center;
+}
+
+h1, h2 {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
 }
 
 h1 {
     margin: 5rem 0 2rem;
     font-size: 2.5rem;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .5)
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2.5rem 0 1rem;
 }
 
 p {
@@ -77,19 +85,19 @@ p {
     grid-template: 40px 200px 40px / repeat(12, 1fr);
 }
 
-.header {
+.grid-2 .header {
     grid-column: 2 / -1;
 }
 
-.menu {
+.grid-2 .menu {
     grid-row: 1 / -1;
 }
 
-.content {
+.grid-2 .content {
     grid-column: 2 / -1;
 }
 
-.footer {
+.grid-2 .footer {
     grid-column: 2 / -1;
 }
 
@@ -120,4 +128,183 @@ p {
 
 .grid-3 .footer {
     grid-area: f;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 4 */
+
+.grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 100px;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 5 */
+
+.grid-5 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+}
+
+.a1 {
+    background: url("images/1.jpg") center/cover no-repeat;
+}
+
+.a2 {
+    background: url("images/2.jpg") center/cover no-repeat;
+}
+
+.a3 {
+    background: url("images/3.jpg") center/cover no-repeat;
+}
+
+.a4 {
+    background: url("images/4.jpg") center/cover no-repeat;
+}
+
+.a5 {
+    background: url("images/5.jpg") center/cover no-repeat;
+}
+
+.a6 {
+    background: url("images/6.jpg") center/cover no-repeat;
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+}
+
+.a7 {
+    background: url("images/7.jpg") center/cover no-repeat;
+    grid-row: auto / span 2;
+}
+
+.a8 {
+    background: url("images/8.jpg") center/cover no-repeat;
+}
+
+.a9 {
+    background: url("images/9.jpg") center/cover no-repeat;
+}
+
+.a10 {
+    background: url("images/10.jpg") center/cover no-repeat;
+}
+
+.a11 {
+    background: url("images/11.jpg") center/cover no-repeat;
+}
+
+.a12 {
+    background: url("images/12.jpg") center/cover no-repeat;
+}
+
+.a13 {
+    background: url("images/13.jpg") center/cover no-repeat;
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+}
+
+.a14 {
+    background: url("images/14.jpg") center/cover no-repeat;
+}
+
+.a15 {
+    background: url("images/15.jpg") center/cover no-repeat;
+}
+
+.a16 {
+    background: url("images/16.jpg") center/cover no-repeat;
+}
+
+.a17 {
+    background: url("images/17.jpg") center/cover no-repeat;
+}
+
+.a18 {
+    background: url("images/18.jpg") center/cover no-repeat;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 6 */
+
+.grid-6 {
+    grid-template: [main-start] 40px [content-start] auto [content-end] 40px [main-end] / [main-start] 1fr [content-start] 5fr [content-end main-end];
+    height: 20rem;
+}
+
+.grid-6 .header {
+    grid-column: main;
+}
+
+.grid-6 .menu {
+    grid-column: main-start / content-start;
+}
+
+.grid-6 .content {
+    grid-column: content;
+}
+
+.grid-6 .footer {
+    grid-column: main;
+    grid-row: 3 / 4;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 7 */
+
+.grid-7 {
+    grid-template: repeat(2, 100px) / repeat(3, 100px);
+    border: 1px solid #333;
+    height: 22.5rem;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 8 */
+
+.grid-8 {
+    grid-template: 40px auto 40px / repeat(12, 1fr);
+    height: 20rem;
+}
+
+.grid-8 .header {
+    grid-column: 1 / -1;
+}
+
+.grid-8 .menu {
+    grid-column: 1 / 2;
+    align-self: center;
+}
+
+.grid-8 .content {
+    grid-column: 2 / -1;
+    align-self: center;
+}
+
+.grid-8 .footer {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+/*///////////////////////////////////////////*/
+
+/* GRID 9 */
+
+.grid-9 {
+    border: solid 1px #333;
+    grid-template-rows: repeat(2, 100px);
+}
+
+.fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 2rem 0;
+}
+
+.container > * {
+    grid-column: 2 / 3;
+    min-width: 0;
+    text-align: justify;
+}
+
+h1 {
+    padding: 2.5rem 0 .5rem;
+    font-size: 2rem;
+}
+
+img {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+}
