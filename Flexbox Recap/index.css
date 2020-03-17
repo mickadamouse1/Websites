@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #333;
+    display: flex;
+    flex-direction: column
+}
+
+.flex {
+    display: inline-flex;
+    border: 2.5px solid #ccc;
+    margin: 1rem auto 2rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.flex-item {
+    background: red;
+    border: 1px solid black;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ccc;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+h2 {
+    margin: .5rem;
+}
+
+/*/////////////////////////////////////*/
+
+/* Container Flex Wrap */
+
+.container-1 {
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
+.container-2 {
+    flex-wrap: wrap-reverse;
+    width: auto;
+    height: auto;
+}
+
+/*/////////////////////////////////////*/
+
+/* Container Flex Direction */
+
+.container-3 {
+    flex-direction: row;
+    height: auto;
+}
+
+.container-4 {
+    flex-direction: column;
+    width: auto;
+}
+
+/*/////////////////////////////////////*/
+
+/* Container Flex Flow */
+
+.container-5 {
+    flex-flow: row wrap;
+    width: auto;
+    height: auto;
+}
+
+/*/////////////////////////////////////*/
+
+/* Container Justify Content */
+
+/* Flex-Start */
+
+.container-6 {
+    justify-content: flex-start;
+    width: 20rem;
+}
+
+.container-6-2 {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Flex-End */
+
+.container-7 {
+    justify-content: flex-end;
+    width: 20rem;
+}
+
+.container-7-2 {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20rem;
+}
+
+/* Space-Evenly */
+
+.container-8 {
+    justify-content: space-evenly;
+    width: 20rem;
+}
+
+.container-8-2 {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20rem;
+}
+
+/* Space-Around */
+
+.container-9 {
+    justify-content: space-around;
+    width: 20rem;
+}
+
+.container-9-2 {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20rem;
+}
+
+/* Space-Between */
+
+.container-10 {
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.container-10-2 {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+/* Space-Center */
+
+.container-11 {
+    justify-content: center;
+    width: 20rem;
+}
+
+.container-11-2 {
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+}
