@@ -15,21 +15,21 @@ body {
     display: inline-flex;
     border: 2.5px solid #ccc;
     margin: 1rem auto 2rem;
-    width: 20rem;
-    height: 20rem;
+    Width: 10rem;
+    height: 10rem;
 }
 
 .flex-item {
     background: red;
     border: 1px solid black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 1rem;
-    width: 5rem;
-    height: 5rem;
+    padding: .3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-h1, h2 {
+h1, h2, h3, p {
     text-align: center;
     color: #ccc;
 }
@@ -90,7 +90,6 @@ h2 {
 
 .container-6 {
     justify-content: flex-start;
-    width: 20rem;
 }
 
 .container-6-2 {
@@ -102,63 +101,151 @@ h2 {
 
 .container-7 {
     justify-content: flex-end;
-    width: 20rem;
 }
 
 .container-7-2 {
     flex-direction: column;
     justify-content: flex-end;
-    width: 20rem;
 }
 
 /* Space-Evenly */
 
 .container-8 {
     justify-content: space-evenly;
-    width: 20rem;
 }
 
 .container-8-2 {
     flex-direction: column;
     justify-content: space-evenly;
-    width: 20rem;
 }
 
 /* Space-Around */
 
 .container-9 {
     justify-content: space-around;
-    width: 20rem;
 }
 
 .container-9-2 {
     flex-direction: column;
     justify-content: space-around;
-    width: 20rem;
 }
 
 /* Space-Between */
 
 .container-10 {
     justify-content: space-between;
-    width: 20rem;
 }
 
 .container-10-2 {
     flex-direction: column;
     justify-content: space-between;
-    width: 20rem;
 }
 
 /* Space-Center */
 
 .container-11 {
     justify-content: center;
-    width: 20rem;
 }
 
 .container-11-2 {
     flex-direction: column;
     justify-content: center;
-    width: 20rem;
+}
+
+/*/////////////////////////////////////*/
+
+/* Container Justify Content */
+
+/* Flex Start */
+
+.container-12 {
+    align-items: flex-start;
+}
+
+.container-12-2 {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Flex End */
+
+.container-13 {
+    align-items: flex-end;
+}
+
+.container-13-2 {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Center */
+
+.container-14 {
+    align-items: center;
+}
+
+.container-14-2 {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Baseline */
+
+.container-15 {
+    align-items: baseline;
+}
+
+.container-15-2 {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.base1 {
+    font-size: 1.2rem;
+    height: 2rem;
+}
+
+.base2 {
+    font-size: 0.6rem;
+    height: 5rem;
+    padding-bottom: 2rem;
+}
+
+.base3 {
+    font-size: 2rem;
+    height: 4rem;
+}
+
+/*/////////////////////////////////////*/
+
+/* Container Align-Content */
+
+.container-16 {
+    width: auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.container-17 {
+    width: auto;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.container-18 {
+    width: auto;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container-19 {
+    width: auto;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.container-20 {
+    width: auto;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
