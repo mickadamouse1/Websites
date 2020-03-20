@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* Navigation */
+
+nav {
+    font-size: 2rem;
+    background-color: #c5c5c5;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    cursor: pointer;
+    flex: auto;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 5px solid #333;
+}
+
+nav ul li:hover {
+    background: #aaa;
+}
+
+/* Centering Div */
+
+.container {
+    height: 20rem;
+    width: 20rem;
+    border: 5px solid #333;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    height: 5rem;
+    width: 5rem;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #333;
+}
+
+.item i {
+    color: #333;
+    font-size: 3rem;
+}
+
+/* Sidings */
+
+.container-2 {
+    font-size: 1.5rem;
+    display: flex;
+    margin: 1rem;;
+}
+
+.item-1 {
+    background: #aaa;
+    width: 100rem;
+    padding: 1rem;
+}
+
+.item-2 {
+    background: #ccc;
+    padding: 1rem;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    margin: 1rem;
+}
+
+.card {
+    font-size: 1.5rem;
+    border: 4px solid #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:nth-child(1) {
+    margin-right: 1rem;
+}
+
+.card .footer {
+    padding: 5px;
+    background: #aaa;
+}
+
+.card .body {
+    flex: 1;
+}
+
+@media all and (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
