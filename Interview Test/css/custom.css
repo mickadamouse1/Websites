@@ -1,0 +1,674 @@
+/* Global Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: open-sans, regular;
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    font-family: sharik-sans, open-sans;
+}
+
+/*////////////////////////////////////////////////  This is used to split sections up for better readability */ 
+
+nav {
+    height: 65px;
+    width: 100%;
+    background: #007B5A;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-home {
+    font-weight: 700;
+    width: 132px;
+}
+
+#group-nav-links {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    height: 32px;
+    width: 110px;
+    background: #fff;
+    color: #CF1362;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 4px 12px;
+}
+
+/*////////////////////////////////////////////////*/ 
+
+#section-about-me {
+    color: #007B5A;
+    margin: 70px 0 0;
+}
+
+.btn-back {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.btn-back i {
+    font-size: 13px;
+    margin: 0 3px 0 0;
+}
+
+#section-about-me h1 {
+    font-size: 50px;
+    margin: 15px 0 30px 0;  
+}
+
+#group-about-me {
+    height: 489px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* GALLERY */ /* GALLERY */ /* GALLERY */
+
+#about-gallery {
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#about-gallery #main-img {
+    width: 100%;
+    height: 361px;
+    margin: 0 0 30px 0;
+    background: url("../img/main-gallery-image.jpg") center/cover no-repeat;
+    border-radius: 30px;
+}
+
+#group-secondary-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#about-gallery .secondary-img {
+    width: 100.44px;
+    height: 98px;
+}
+
+.secondary-img:nth-child(1), .secondary-img:nth-child(3)  {
+    background: url("../img/small-gallery-image.jpg") center/cover no-repeat;
+}
+
+.secondary-img:nth-child(2) {
+    background: url("../img/main-gallery-image.jpg") center/cover no-repeat;
+}
+
+
+/* MAIN CONTENT */ /* MAIN CONTENT */ /* MAIN CONTENT */
+
+#about-content {
+    width: 40%;
+    height: 521px;
+}
+
+#about-content h2 {
+    font-size: 30px;
+    margin: 0 0 15px 0;
+}
+
+#about-content p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* DONATION INFO */ /* DONATION INFO */ /* DONATION INFO */
+
+#about-donation-info {
+    width: 23%;
+    height: 391px;
+    background: #CF1362;
+    color: #fff;
+    border-radius: 30px;
+    padding: 30px 48px 40px; 
+}
+
+#about-donation-info h2 {
+    font-size: 30px;
+    margin: 0 0 15px 0;
+    line-height: 36px;
+}
+
+#about-donation-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#about-donation-info a {
+    width: 174px;
+    height: 50px;
+    background: #fff;
+    color: #CF1362;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 25px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-donation-info div {
+    width: 116px;
+    margin: 15px 0 0 0;
+    font-size: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*////////////////////////////////////////////////*/ 
+
+#section-main {
+    margin: 30px 0 0 0;
+}
+
+#section-main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.main-groups {
+    color: #666666;
+    background: #F0F0F0;
+    height: auto;
+    width: 48.5%;
+    padding: 40px 36px;
+    border-radius: 40px;
+    margin: 0 0 30px;
+}
+
+.main-groups .group-header {
+    font-size: 30px;
+    margin: 0 0 40px 15px;
+}
+
+.main-groups .card {
+    background: #fff;
+    border-radius: 40px;
+    padding: 20px 34px 30px;
+    margin: 0 0 30px 0;
+}
+
+.main-groups .card h3 {
+    font-size: 16px;
+}
+
+.main-groups .card h3, 
+.main-groups .card p {
+    margin: 0 0 15px 0;
+}
+
+.main-groups .card h3:nth-last-child(1),
+.main-groups .card p:nth-last-child(1),
+.main-groups .card:nth-last-child(1) {
+    margin: 0 0 0 0;
+}
+
+.main-groups .card img {
+    width: 100%;
+}
+
+/* DONATIONS */ /* DONATIONS */ /* DONATIONS */
+
+.donation {
+    display: flex;
+}
+
+.donation h2 {
+    color: #CF1362;
+    font-size: 45px;
+    margin: 0 0 2px 0;
+}
+
+.donation-message {
+    font-size: 16px;
+    margin: 20px 0 0 58px;
+}
+
+/* POSTS */ /* POSTS */  /* POSTS */ 
+
+.post h2 {
+    margin: 0 0 15px;
+}
+
+/* EVENTS */ /* EVENTS */  /* EVENTS */ 
+
+#group-main-events {
+    width: 100%;
+    height: 676px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#group-main-events .group-header {
+    width: 100%;
+}
+
+#group-main-events .card {
+    width: 31%;
+}
+
+.event h2 {
+    width: 215px;
+    margin: 0 0 15px 0;
+}
+
+.event a {
+    color: #fff;
+    background: #CF1362;
+    width: 112px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 30px auto 0;
+}
+
+/* BACK BUTTON */ /* BACK BUTTON */ /* BACK BUTTON */
+
+#section-main .btn-back {
+    font-size: 18px;
+    color: #fff;
+    background: #CF1362;
+    width: 136px;
+    height: 50px;
+    margin: 0 0 60px 0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+
+/*/////////////////////////////////////////////////////////*/
+
+/* PHOTO GALLERY */ /* PHOTO GALLERY */ /* PHOTO GALLERY */
+
+#section-photo-gallery {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+#shader {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 30%;
+    position: absolute;
+    z-index: 0;
+}
+
+#photo-gallery-main {
+    background: #fff;
+    width: 970px;
+    height: 595px;
+    border-radius: 40px;
+    padding: 70px 100px;
+    z-index: 0;
+}
+
+#photo-gallery-main h1 {
+    font-size: 50px;
+    color: #CF1362;
+    margin: 0 0 30px;
+}
+
+#group-photos {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    height: 250px;
+    grid-gap: 56px;
+    align-items: center;
+    justify-items: center;
+}
+
+.photo {
+    background: url("../img/small-gallery-image.jpg") center/cover no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+#photo-gallery-main a {
+    background: #CF1362;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+    width: 136px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery-navigation {
+    width: 120px;
+    height: 40px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gallery-navigation i {
+    color: #707070;
+}
+
+#gallery-navigation .nav-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.active {
+    background: #ADADAD;
+}
+
+.inactive {
+    background: #DEDEDE;
+}
+
+/* LARGE VIEW */ /* LARGE VIEW */ /* LARGE VIEW */
+
+#large-image-window {
+    width: 770px;
+    height: 750px;
+    border-radius: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 20;
+    background: #fff;
+    position: absolute;
+}
+
+#large-image {
+    background: url("../img/main-gallery-image.jpg") center/cover no-repeat;
+    width: 570px;
+    height: 556px;
+}
+
+#large-image-window a {
+    width: 136px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #CF1362;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+#large-image-window i {
+    font-size: 30px;
+    color: #ADADAD;
+    width: 10%;
+    text-align: center;
+}
+
+/*//////////////////////////////////////////*/
+/*//////////////////////////////////////////*/
+/*//////////////////////////////////////////*/
+
+@media (max-width: 1320px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    /* //////////////////// */
+
+    #about-donation-info {
+        padding: 26px 44px 36px;
+    }
+
+    #about-donation-info h2 {
+        font-size: 24px;
+    }
+
+    #about-donation-info h3 {
+        font-size: 16px;
+    }
+
+    #about-donation-info a {
+        width: 130px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .container {
+        max-width: 820px;
+    }
+
+    /* //////////////////// */
+
+    #about-gallery #main-img {
+        margin: 0 0 10px 0;
+    }
+
+    #about-gallery .secondary-img {
+        width: 80px;
+        height: 78px;
+    }
+
+    #about-donation-info {
+        padding: 26px 25px 36px;
+    }
+
+    /* //////////////////// */
+
+    .main-groups {
+        width: 100%;
+    }
+
+    /* //////////////////// */
+
+    #group-main-events {
+        height: auto;
+        align-items: initial;
+    }
+
+    #group-main-events .card {
+        width: 48.5%;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 700px;
+    }
+
+    /* //////////////////// */
+
+    #group-about-me {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #about-content {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px;
+        order: 1;
+    }
+
+    #about-gallery {
+        width: 60%;
+        height: auto;
+        order: 2;
+    }
+
+    #about-gallery #main-img {
+        margin: 0 10px 0 0;
+        width: 70%;
+    }
+
+    #group-secondary-images {
+        width: auto;
+        height: 364px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #group-secondary-images .secondary-img {
+        width: 103px;
+        height: 98px;
+    }
+
+    #about-donation-info {
+        width: 37%;
+        height: 361px;
+        order: 3;
+    }
+
+    #about-donation-info h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        max-width: 600px;
+    }
+
+    /* //////////////////// */
+
+    #group-secondary-images .secondary-img {
+        width: 95px;
+        height: 91px;
+    }
+}
+
+@media (max-width: 670px) {
+    .container {
+        max-width: 500px;
+    }
+
+    /* //////////////////// */
+
+    #about-gallery {
+        width: 52%;
+    }
+
+    #about-gallery #main-img {
+        width: 100%;
+        margin: 0;
+    }
+
+    #group-secondary-images {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        flex-direction: row;
+    }
+
+    #group-secondary-images .secondary-img {
+        width: 71px;
+        height: 74px;
+    }
+
+    #about-donation-info {
+        width: 45%;
+        height: 448px;
+    }
+
+    /* //////////////////// */
+
+    #group-main-events .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 570px) {
+    .container {
+        max-width: 360px;
+    }
+
+    /* //////////////////// */
+
+    #about-content p {
+        text-align: justify;
+    }
+
+    #about-gallery {
+        width: 100%;
+    }
+
+    #group-secondary-images .secondary-img {
+        width: 89px;
+        height: 86px;
+    }
+
+    #about-donation-info {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    #about-donation-info a {
+        width: 170px;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    /* //////////////////// */
+
+    .donation {
+        flex-direction: column;
+    }
+
+    .donation-message {
+        margin: 20px 0 0 0;
+    }
+}
