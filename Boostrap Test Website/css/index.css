@@ -23,9 +23,10 @@ nav ul li {
 
 /*//////////////////////////////*/
 
-#jumbotron {
+#section-jumbotron {
     background: url("../images/jumbo.jpg") center/cover no-repeat;
     height: 40rem;
+    position: relative;
 }
 
 #jumbotron-shader {
@@ -38,14 +39,57 @@ nav ul li {
     opacity: 0.3;
 }
 
-#jumbotron div {
+#section-jumbotron div {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-#jumbotron h3 {
+#section-jumbotron h3 {
     color: #fff;
     font-size: 6rem;
     z-index: 2;
+}
+
+/*//////////////////////////////*/
+
+#cat-cards-group {
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.cat-card {
+    height: 15rem;
+}
+
+#cat-1 {
+    background: url("../images/cat-card-1.jpg") center/cover no-repeat;
+}
+
+#cat-2 {
+    background: url("../images/cat-card-2.jpg") center/cover no-repeat;
+}
+
+#cat-3 {
+    background: url("../images/cat-card-3.jpg") center/cover no-repeat;
+}
+
+#cat-4 {
+    background: url("../images/cat-card-4.jpg") center/cover no-repeat;
+}
+
+#cat-5 {
+    background: url("../images/cat-card-5.jpg") center/cover no-repeat;
+}
+
+#cat-6 {
+    background: url("../images/cat-card-6.jpg") center/cover no-repeat;
+}
+
+#cat-7 {
+    background: url("../images/cat-card-7.jpg") center/cover no-repeat;
+}
+
+#cat-8 {
+    background: url("../images/cat-card-8.jpg") center/cover no-repeat;
 }
