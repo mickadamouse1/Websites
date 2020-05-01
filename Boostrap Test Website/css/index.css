@@ -1,3 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 5rem;
+}
+
+hr {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5); 
+    margin: 2rem auto;
+}
+
+/*//////////////////////////////*/
+
 nav { 
     height: 7.5rem;
     display: flex;
@@ -27,6 +43,7 @@ nav ul li {
     background: url("../images/jumbo.jpg") center/cover no-repeat;
     height: 40rem;
     position: relative;
+    margin: 0 0 5rem 0;
 }
 
 #jumbotron-shader {
@@ -92,4 +109,31 @@ nav ul li {
 
 #cat-8 {
     background: url("../images/cat-card-8.jpg") center/cover no-repeat;
+}
+
+/*//////////////////////////////*/
+
+.card {
+    background: #f4f4f4;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-radius: .75rem;
+}
+
+.card .cat-card {
+    border-radius: .75rem;
+}
+
+.card h2, .card p {
+    text-align: center;
+}
+
+.card hr {
+    width: 80%;
+    border: .1rem solid black;
+    margin: 2rem auto;
+}
+
+.card p {
+    margin-bottom: 0;
 }
